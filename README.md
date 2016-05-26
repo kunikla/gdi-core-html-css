@@ -1,6 +1,6 @@
 # Intro to HTML + CSS
 
-Slides and materials are hosted at [http://gdiboston.github.io/gdi-core-html-css](http://gdiboston.github.io/gdi-core-html-css).
+Slides and materials are hosted at [http://gdibtv.github.io/gdi-core-html-css/](http://gdibtv.github.io/gdi-core-html-css/).
 
 ## Course description
 
