@@ -183,9 +183,9 @@ selector {
 					<p class="fragment"><<< See examples below >>></p>
 				</section>
 				<section>
-					<p>Example with Static Positioning</p>
+					<p class="blue">Example with Static Positioning</p>
 					<p data-height="284" data-theme-id="0" data-slug-hash="epVoXR" data-default-tab="result" data-user="anythingcodes" class='codepen fragment'>See the Pen <a href='http://codepen.io/anythingcodes/pen/epVoXR/'>Absolute Positioning</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-					<p>Example with Absolute Positioning</p>
+					<p class="blue">Example with Absolute Positioning</p>
 					<p data-height="284" data-theme-id="0" data-slug-hash="xwjqYq" data-default-tab="result" data-user="anythingcodes" class='codepen fragment'>See the Pen <a href='http://codepen.io/anythingcodes/pen/xwjqYq/'>Absolute Positioning</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 				</section>
 			</section>
@@ -219,7 +219,7 @@ selector {
 					<p class="fragment">The element with the highest z-index goes on top</p>
 					<p class="fragment"><small>z-index only works on non-static elements (such as <span class="green">relative</span> or <span class="green">absolute</span>)</small></p>
 					<div class="fragment">
-						<pre><code class="html css">
+<pre><code class="html css">
 .bottom {
    position: absolute; /* absolute is a non-static position */
    bottom: 10px;
@@ -234,7 +234,7 @@ selector {
    background-color: lightseagreen;
    z-index: 2;
 }
-						</code></pre>
+</code></pre>
 						<div style="position: absolute; bottom: -20px; left:60px; background-color: lightcoral; color:black"> Bottom </div>
 						<div style="position: absolute; bottom: -15px; left:60px; background-color: lightseagreen; z-index: 2; "> Top </div>
 					</div>
@@ -258,34 +258,48 @@ selector {
 				<p><img src="img/project-banner.jpg" alt="The design's banner section" /></p>
 			</section>
 
+			<!-- Float -->
 			<section>
-				<h3>Property: <em>float</em></h3>
-<pre><code class="css">selector {
+				<section>
+					<h3>Property: <em>float</em></h3>
+<pre><code class="css">
+selector {
    float: left;
    float: right;
 }</code></pre>
-				<p class="fragment"><br />The <span class="blue">float</span> property shifts an element to the <span class="green">left</span> or <span class="green">right</span> on the current line, taking it out of normal flow</p>
-				<p class="fragment">When an element is floated, <span class="orange">subsequent elements wrap around it</span></p>
-				<p class="fragment"><img src="img/floating.png" alt="A floating example" /></p>
+					<p class="fragment"><br />The <span class="blue">float</span> property shifts an element to the <span class="green">left</span> or <span class="green">right</span> on the current line, taking it out of normal flow</p>
+					<p class="fragment">When an element is floated, <span class="orange">subsequent elements wrap around it</span></p>
+					<p class="fragment"><img src="img/floating.png" alt="A floating example" /></p>
+					<p class="fragment"><<< See examples below >>></p>
+				</section>
+				<section>
+					<p class="blue">Example where image is not floated</p>
+					<p data-height="295" data-theme-id="0" data-slug-hash="vNROXq" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/vNROXq/'>Float - Before</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+					<p class="fragment"><<< See next example below >>></p>
+				</section>
+				<section>
+					<p class="blue">Example where image is floated left</p>
+					<p data-height="295" data-theme-id="0" data-slug-hash="RWypMy" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/RWypMy/'>Float - After</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+				</section>
 			</section>
 			<section>
-				<h3>Property: <em>float</em></h3>
-				<p class="blue">An Example</p>
-				<p data-height="295" data-theme-id="0" data-slug-hash="vNROXq" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/vNROXq/'>Float - Before</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-				<p class="fragment"><a href="http://codepen.io/anythingcodes/pen/RWypMy" target="_blank">View result of above CodePen &raquo;</a></p>
-			</section>
-			<section>
-				<h3>Property: <em>float</em></h3>
-				<p class="blue">Using <em>float</em> in Layouts</p>
-				<p class="fragment">Use <em>float</em> on block-level elements (<span class="orange">&lt;aside></span>, <span class="orange">&lt;main></span>, <span class="orange">&lt;div></span>, etc.) to make page layouts</p>
-				<p class="fragment">Always <span class="green">set a width</span> on floated block-level elements used in layouts</p>
-				<p class="fragment"><img src="img/example-float-column.png" alt="Setting a width on floated layout elements" /></p>
-			</section>
-			<section>
-				<h3>Property: <em>float</em></h3>
-				<p class="blue">Example: Using <em>float</em> in Layouts</p>
-				<p data-height="182" data-theme-id="0" data-slug-hash="JYLdyw" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/JYLdyw/'>Float in Layouts - Before</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-				<p class="fragment"><a href="http://codepen.io/anythingcodes/pen/qOYrYj" target="_blank">View result of above CodePen &raquo;</a></p>
+				<section>
+					<h3>Property: <em>float</em></h3>
+					<p class="blue">Using <em>float</em> in Layouts</p>
+					<p class="fragment">Use <em>float</em> on block-level elements (<span class="orange">&lt;aside></span>, <span class="orange">&lt;main></span>, <span class="orange">&lt;div></span>, etc.) to make page layouts</p>
+					<p class="fragment">Always <span class="green">set a width</span> on floated block-level elements used in layouts</p>
+					<p class="fragment"><img src="img/example-float-column.png" alt="Setting a width on floated layout elements" /></p>
+					<p class="fragment"><<< See examples below >>></p>
+				</section>
+				<section>
+					<p class="blue">Example: Using <em>float</em> in Layouts</p>
+					<p data-height="182" data-theme-id="0" data-slug-hash="JYLdyw" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/JYLdyw/'>Float in Layouts - Before</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+					<p class="fragment"><<< See next example below >>></p>
+				</section>
+				<section>
+					<p class="blue">Example: Using <em>float</em> in Layouts</p>
+					<p data-height="182" data-theme-id="0" data-slug-hash="qOYrYj" data-default-tab="result" data-user="anythingcodes" class='codepen'>See the Pen <a href='http://codepen.io/anythingcodes/pen/qOYrYj/'>Float in Layouts - Before</a> by Liz Shaw (<a href='http://codepen.io/anythingcodes'>@anythingcodes</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+				</section>
 			</section>
 
 			<!-- Clearing -->
